@@ -1,0 +1,422 @@
+/* Variables globales para colores y tamaños */
+:root {
+  --accent: #3A6F43;
+  --accent-dark: #21867a;
+  --bg: #f4fdfc;
+  --muted: #555;
+  --max-w: 1200px;
+}
+
+/* Estilos base para todos los elementos */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f9ff, #e0f7fa); /* Fondo con gradiente para profundidad */
+  color: #222;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos para la sección del header */
+header {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.brand h1 {
+  font-family: Playfair Display, serif;
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* Estilos para botones generales */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--accent-dark);
+}
+
+/* Estilos para la sección hero */
+.hero {
+  height: 70vh;
+  background-image: url('imagenes/caporo-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Ajuste de contraste */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6); /* Fondo detrás del texto */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-family: Playfair Display, serif;
+  font-size: 44px;
+  margin: 0 0 12px;
+}
+
+.hero p {
+  color: #f0f0f0;
+  margin: 0 0 18px;
+}
+
+/* Estilos generales para secciones */
+section {
+  padding: 52px 0;
+}
+
+h3.section-title {
+  font-family: Playfair Display, serif;
+  font-size: 28px;
+  margin: 0 0 24px; /* Más margen inferior */
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+/* Estilos para la sección de habitaciones */
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Espacio mayor */
+}
+
+.room {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.room:hover {
+  transform: translateY(-5px);
+}
+
+.room .meta {
+  padding: 14px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Estilos para la sección de comodidades */
+.amenities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px; /* Espacio mayor */
+}
+
+.amenity {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.amenity:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de galería (carrusel de 4 columnas con margen) */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%; /* Para 3 ciclos de 4 imágenes (12 imágenes efectivas) */
+  animation: slideLeft 12s linear infinite; /* Movimiento continuo hacia la izquierda */
+}
+
+.carousel-inner img {
+  width: 25%; /* Cada imagen ocupa el 25% del ancho total */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px; /* Margen entre imágenes */
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-75%); } /* Mueve hasta el final del segundo grupo */
+}
+
+/* Estilos para la sección de testimonios */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.quote {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.quote:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de contacto */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 24px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  height: 300px; /* Altura fija para igualar el iframe */
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-card label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.contact-card textarea {
+  flex-grow: 1;
+  resize: vertical;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.contact-card button {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+/* Estilos para el footer */
+footer {
+  background: #222;
+  color: #eee; /* Texto más claro */
+  padding: 28px 0;
+}
+
+footer a {
+  color: #eee;
+  margin-left: 14px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 1000px) {
+  .rooms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .rooms {
+    grid-template-columns: 1fr;
+  }
+
+  .amenities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para la sección de bienvenida (modificada completamente) */
+.about-section {
+  background: linear-gradient(135deg, #d1f2eb, #a8e6cf); /* Gradiente vibrante */
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-family: Playfair Display, serif;
+  font-size: 2.5rem;
+  color: var(--accent-dark);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #f4d03f;
+  margin: 10px 0;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.benefits li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.about-image {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover .img-responsive {
+  transform: scale(1.05);
+}
