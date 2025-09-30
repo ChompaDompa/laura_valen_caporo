@@ -4,87 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel San Carlos</title>
+  <title>Caporo Cabaña 🌴🌊</title>
   <link rel="stylesheet" href="style.css">
-  <!-- En el <head> de tu HTML -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="imagenes/logo.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes/logo.jpg">
 </head>
 
-<body>
+<body id="inicio">
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container nav-container">
-      <h1 class="logo">Hotel Caporo</h1>
+      <a href="#inicio" class="logo">
+        <img src="imagenes/logo.jpg" alt="Logo Caporo Cabaña">
+        Caporo Cabaña
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul class="nav-links">
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#habitaciones">Habitaciones</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#nosotros"><i class="fas fa-info-circle"></i>Nosotros</a></li>
+        <li><a href="#habitaciones"><i class="fas fa-bed"></i>Habitaciones</a></li>
+        <li><a href="#servicios"><i class="fas fa-concierge-bell"></i>Servicios</a></li>
+        <li><a href="#galeria"><i class="fas fa-image"></i>Galería</a></li>
+        <li><a href="#testimonios"><i class="fas fa-star"></i>Testimonios</a></li>
+        <li><a href="#contacto"><i class="fas fa-phone"></i>Contacto</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-content">
-      <h2>Bienvenido al <span class="cursiva">Hotel Caporo</span></h2>
-      <p>Tu lugar ideal para descansar y disfrutar</p>
-      <a href="#habitaciones" class="btn">Ver Habitaciones</a>
+    <div class="hero-content fade-in">
+      <h1>Bienvenido a <span class="cursiva">Caporo Cabaña</span></h1>
+      <p>Tu lugar ideal para descansar y disfrutar del paraíso.</p>
+      <a href="#habitaciones" class="btn">Ver habitaciones</a>
     </div>
   </header>
 
   <!-- NOSOTROS -->
   <section id="nosotros">
     <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p>
-        En <strong>Hotel Caporo</strong> creemos que cada estancia debe convertirse en una experiencia inolvidable.
-        Ubicado en un entorno privilegiado, nuestro hotel combina el encanto de la hospitalidad tradicional con la
-        comodidad
-        y el estilo contemporáneo, ofreciendo un espacio único para descansar, disfrutar y vivir momentos especiales.
-      </p>
-      <p>
-        Nuestra misión es brindarle a cada huésped un servicio cercano, atento y personalizado, cuidando cada detalle
-        para que
-        se sienta como en casa, pero rodeado de todas las comodidades que merece.
-      </p>
-      <p>
-        Contamos con habitaciones diseñadas para su confort, espacios que invitan al relax y una atención que refleja la
-        calidez
-        de nuestra gente. Tanto si nos visita por negocios, vacaciones o una escapada romántica, en Hotel Caporo
-        encontrará el lugar
-        perfecto para disfrutar de una estadía tranquila y memorable.
-      </p>
-      <p>
-        En Caporo no solo ofrecemos hospedaje: ofrecemos experiencias, recuerdos y la certeza de querer regresar.
-      </p>
+      <h2>Sobre Nosotros 🌟</h2>
+      <div class="about-wrapper">
+        <img src="imagenes/logo.jpg" alt="Vista de Caporo Cabaña" class="about-image">
+        <div class="about-text">
+          <p>En <strong>Caporo Cabaña</strong> ✨, cada estancia es mágica. Ubicados en un paraíso natural 🌿, combinamos hospitalidad tradicional con comodidad moderna 🏡.</p>
+          <p>Ofrecemos un refugio perfecto para relajarte 🛀, disfrutar de la naturaleza 🌴 y crear recuerdos inolvidables 💖 con tu familia o amigos.</p>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!-- HABITACIONES -->
   <section id="habitaciones">
     <div class="container">
-      <h2>Nuestras Habitaciones</h2>
+      <h2>Nuestras Habitaciones 🛏️</h2>
       <div class="room-grid">
+
         <div class="room">
           <img src="imagenes/habitaciones/habitacion1.jpg" alt="Habitación estándar">
-          <h3>Habitación Estándar</h3>
-          <p>Confortable y accesible, equipada con todo lo necesario.</p>
+          <div class="room-content">
+            <h3>Habitación Estándar 🌼</h3>
+            <p>Confortable y accesible, equipada con todo lo necesario.</p>
+            <p class="price">Desde <strong>$120.000 COP / noche</strong></p>
+            <div class="room-icons">
+              <span title="2 camas"><i class="fas fa-bed"></i></span>
+              <span title="Wi-Fi"><i class="fas fa-wifi"></i></span>
+              <span title="Vista al jardín"><i class="fas fa-tree"></i></span>
+            </div>
+            <a href="#contacto" class="btn-reserve">Reservar ahora 📅</a>
+          </div>
         </div>
+
         <div class="room">
           <img src="imagenes/habitaciones/habitacion2.jpg" alt="Habitación suite">
-          <h3>Suite</h3>
-          <p>Espaciosa, elegante y con vista a la ciudad.</p>
+          <div class="room-content">
+            <h3>Suite Elegante 🌊</h3>
+            <p>Espaciosa, elegante y con vista privilegiada al mar.</p>
+            <p class="price">Desde <strong>$220.000 COP / noche</strong></p>
+            <div class="room-icons">
+              <span title="Cama king"><i class="fas fa-bed"></i></span>
+              <span title="Wi-Fi"><i class="fas fa-wifi"></i></span>
+              <span title="Vista panorámica"><i class="fas fa-city"></i></span>
+            </div>
+            <a href="#contacto" class="btn-reserve">Reservar ahora 📅</a>
+          </div>
         </div>
+
         <div class="room">
           <img src="imagenes/habitaciones/habitacion3.jpg" alt="Habitación familiar">
-          <h3>Familiar</h3>
-          <p>Ideal para disfrutar en compañía, con amplios espacios.</p>
+          <div class="room-content">
+            <h3>Familiar 👨‍👩‍👧‍👦</h3>
+            <p>Ideal para disfrutar en compañía, con amplios espacios y comodidad total.</p>
+            <p class="price">Desde <strong>$280.000 COP / noche</strong></p>
+            <div class="room-icons">
+              <span title="4 camas"><i class="fas fa-bed"></i></span>
+              <span title="Wi-Fi"><i class="fas fa-wifi"></i></span>
+              <span title="Vista al mar"><i class="fas fa-water"></i></span>
+            </div>
+            <a href="#contacto" class="btn-reserve">Reservar ahora 📅</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -92,108 +115,108 @@
   <!-- SERVICIOS -->
   <section id="servicios">
     <div class="container">
-      <h2>Servicios</h2>
+      <h2>Servicios 🍹🛎️</h2>
       <div class="services-grid">
-        <div class="amenity">Piscina</div>
-        <div class="amenity">Restaurante</div>
-        <div class="amenity">WiFi Gratis</div>
-        <div class="amenity">Parqueadero</div>
-        <div class="amenity">Recepción 24/7</div>
+        <div class="service-card">
+          <i class="fas fa-swimming-pool"></i>
+          <h3>Piscina</h3>
+          <p>Relájate en nuestra piscina al aire libre con vista al mar.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Restaurante</h3>
+          <p>Disfruta de cocina local e internacional.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-wifi"></i>
+          <h3>Wi-Fi Gratis</h3>
+          <p>Conéctate en cualquier parte del hotel sin costo.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-parking"></i>
+          <h3>Parqueadero</h3>
+          <p>Amplio estacionamiento privado.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>Recepción 24/7</h3>
+          <p>Atención personalizada. También contamos chistes malos si te hace falta.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- GALERÍA -->
   <section id="galeria">
-    <h2>Galería</h2>
+    <h2>Galería 📸</h2>
     <div class="galeria-container">
       <div class="galeria-slide">
-        <!-- Imágenes (repite varias para lograr el loop infinito) -->
         <img src="imagenes/galeria/img1.jpg" alt="Foto 1">
         <img src="imagenes/galeria/img2.jpg" alt="Foto 2">
         <img src="imagenes/galeria/img3.jpg" alt="Foto 3">
         <img src="imagenes/galeria/img4.jpg" alt="Foto 4">
         <img src="imagenes/galeria/img5.jpg" alt="Foto 5">
         <img src="imagenes/galeria/img6.jpg" alt="Foto 6">
-        <img src="imagenes/galeria/img7.jpg" alt="Foto 1">
-        <img src="imagenes/galeria/img8.jpg" alt="Foto 2">
+        <img src="imagenes/galeria/img7.jpg" alt="Foto 7">
+        <img src="imagenes/galeria/img8.jpg" alt="Foto 8">
+        <img src="imagenes/galeria/img1.jpg" alt="Foto 1">
+        <img src="imagenes/galeria/img2.jpg" alt="Foto 2">
       </div>
     </div>
   </section>
-
 
   <!-- TESTIMONIOS -->
   <section id="testimonios">
-    <h2>Nuestros Huéspedes</h2>
+    <h2>Nuestros Huéspedes 💖</h2>
     <div class="testimonials">
       <div class="quote">
         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Huésped feliz" class="guest-photo">
-        <p>"La experiencia en Hotel Caporo fue mágica. El servicio es de primera y el lugar simplemente espectacular."
-        </p>
+        <p>"La experiencia fue mágica. Hasta aprendí a bailar salsa en 5 minutos."</p>
         <h4>- Ana Rodríguez</h4>
       </div>
-
       <div class="quote">
         <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Huésped feliz" class="guest-photo">
-        <p>"Un lugar paradisíaco. Despertar con el sonido del mar y la calidez de la gente no tiene precio."</p>
+        <p>"Despertar con el sonido del mar es mejor que cualquier alarma."</p>
         <h4>- Carlos Méndez</h4>
       </div>
-
       <div class="quote">
         <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Huésped feliz" class="guest-photo">
-        <p>"Definitivamente volveré. Las habitaciones son muy cómodas y la comida deliciosa."</p>
+        <p>"Volveré solo por la comida, incluso te dejan comer sobre la cama."</p>
         <h4>- Laura Gómez</h4>
       </div>
-
       <div class="quote">
-        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Huésped feliz" class="guest-photo">
-        <p> "Un lugar paradisíaco, me enamoré de Capurganá. La atención fue excelente y definitivamente volveré con mi
-          familia."</p>
-        <h4>- Valentina Gomez</h4>
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Huésped feliz" class="guest-photo">
+        <p>"Experiencia única, y no me hicieron tomar aguardiente con ron."</p>
+        <h4>- Andrés López</h4>
       </div>
     </div>
   </section>
 
-
-  <!-- =========================
-     CONTACTO
-     ========================= -->
+  <!-- CONTACTO -->
   <section id="contacto">
-    <h2>Contáctanos</h2>
+    <h2>Contacto 📞</h2>
     <div class="contact-container">
-
-      <!-- Formulario con mailto -->
-      <form class="contact-form" action="mailto:tu-correo@ejemplo.com" method="POST" enctype="text/plain">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required>
-
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="Correo" placeholder="Tu correo" required>
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="Mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
-
-        <button type="submit" class="btn">Enviar</button>
+      <form class="contact-form" id="contactForm" action="mailto:tuemail@correo.com" method="post" enctype="text/plain">
+        <input type="text" id="nombre" placeholder="Nombre completo ✍️" required>
+        <input type="email" id="email" placeholder="Correo electrónico 📧" required>
+        <input type="tel" id="telefono" placeholder="Teléfono 📱">
+        <textarea id="mensaje" placeholder="Mensaje 📝" rows="5" required></textarea>
+        <button type="submit" class="btn-submit">Enviar mensaje 💌</button>
       </form>
-
-      <!-- Mapa -->
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13267.982883830035!2d-77.35638969765368!3d8.634829929166285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5122998f674f09%3A0x47c236bb2cdeb1da!2zQ2FwdXJnYW5hLCBBY2FuZMOtLCBDaG9jw7M!5e0!3m2!1ses-419!2sco!4v1759195801537!5m2!1ses-419!2sco"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15778.380478516206!2d-77.3499471!3d8.634810049999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5122998f674f09%3A0x47c236bb2cdeb1da!2zQ2FwdXJnYW5hLCBBY2FuZMOtLCBDaG9jw7M!5e0!3m2!1ses-419!2sco!4v1759203688777!5m2!1ses-419!2sco"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
-
-
 
   <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Hotel Caporo - Todos los derechos reservados.</p>
-    </div>
+    <p>&copy; 2025 Caporo Cabaña - Todos los derechos reservados. ⚠️ Prohibido roncar muy fuerte 😴</p>
   </footer>
+
+  <script src="js.js"></script>
 </body>
 
 </html>
