@@ -1,191 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hotel Caporo — Capurganá</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel San Carlos</title>
   <link rel="stylesheet" href="style.css">
+  <!-- En el <head> de tu HTML -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container topbar">
-      <div class="brand">
-        <h1>Hotel Caporo</h1>
-      </div>
-      <nav>
-        <a href="#about">Nosotros</a>
-        <a href="#rooms">Habitaciones</a>
-        <a href="#gallery">Galería</a>
-        <a href="#contact" class="btn">Contáctanos</a>
-      </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Hotel Caporo</h1>
+      <ul class="nav-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </div>
-    <div class="hero">
-      <div class="container">
-        <h2>Caporo — Capurganá</h2>
-        <p>Un paraíso frente al mar Caribe, rodeado de selva tropical y playas vírgenes.</p>
-        <a href="#rooms" class="btn">Ver habitaciones</a>
-      </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h2>Bienvenido al <span class="cursiva">Hotel Caporo</span></h2>
+      <p>Tu lugar ideal para descansar y disfrutar</p>
+      <a href="#habitaciones" class="btn">Ver Habitaciones</a>
     </div>
   </header>
 
-  <main>
-    <section id="nosotros" class="section about-section">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <h2>Bienvenido a Hotel Caporo</h2>
-            <p>En el corazón de Capurganá, combina el encanto de la selva tropical con la tranquilidad del mar Caribe.</p>
-            <ul class="benefits">
-              <li>Habitaciones acogedoras con vistas impresionantes.</li>
-              <li>Gastronomía caribeña con ingredientes locales frescos.</li>
-              <li>Actividades como paseos en lancha, excursiones en selva y tours culturales.</li>
-              <li>Ideal para escapadas románticas, vacaciones familiares o aventuras.</li>
-            </ul>
-            <p>Descubre un paraíso para reconectar con la naturaleza y vivir momentos inolvidables.</p>
-            <a href="#rooms" class="btn">Descubre nuestras habitaciones</a>
-          </div>
-          <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1501117716987-c8e6d4ec8b8f?q=80&w=800" alt="Selva y mar en Capurganá" class="img-responsive">
-          </div>
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En <strong>Hotel Caporo</strong> creemos que cada estancia debe convertirse en una experiencia inolvidable.
+        Ubicado en un entorno privilegiado, nuestro hotel combina el encanto de la hospitalidad tradicional con la
+        comodidad
+        y el estilo contemporáneo, ofreciendo un espacio único para descansar, disfrutar y vivir momentos especiales.
+      </p>
+      <p>
+        Nuestra misión es brindarle a cada huésped un servicio cercano, atento y personalizado, cuidando cada detalle
+        para que
+        se sienta como en casa, pero rodeado de todas las comodidades que merece.
+      </p>
+      <p>
+        Contamos con habitaciones diseñadas para su confort, espacios que invitan al relax y una atención que refleja la
+        calidez
+        de nuestra gente. Tanto si nos visita por negocios, vacaciones o una escapada romántica, en Hotel Caporo
+        encontrará el lugar
+        perfecto para disfrutar de una estadía tranquila y memorable.
+      </p>
+      <p>
+        En Caporo no solo ofrecemos hospedaje: ofrecemos experiencias, recuerdos y la certeza de querer regresar.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- HABITACIONES -->
+  <section id="habitaciones">
+    <div class="container">
+      <h2>Nuestras Habitaciones</h2>
+      <div class="room-grid">
+        <div class="room">
+          <img src="imagenes/habitaciones/habitacion1.jpg" alt="Habitación estándar">
+          <h3>Habitación Estándar</h3>
+          <p>Confortable y accesible, equipada con todo lo necesario.</p>
+        </div>
+        <div class="room">
+          <img src="imagenes/habitaciones/habitacion2.jpg" alt="Habitación suite">
+          <h3>Suite</h3>
+          <p>Espaciosa, elegante y con vista a la ciudad.</p>
+        </div>
+        <div class="room">
+          <img src="imagenes/habitaciones/habitacion3.jpg" alt="Habitación familiar">
+          <h3>Familiar</h3>
+          <p>Ideal para disfrutar en compañía, con amplios espacios.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="rooms">
-      <div class="container">
-        <h3 class="section-title">Nuestras Habitaciones</h3>
-        <p class="lead">Diseñadas para tu confort, con vista al mar y a la selva.</p>
-        <div class="rooms">
-          <article class="room">
-            <img src="imagenes/habitacion1.jpg" alt="Deluxe">
-            <div class="meta">
-              <h4>Deluxe</h4>
-              <p>Cama king • Vista al mar</p>
-              <p class="price">$140 / noche</p>
-            </div>
-          </article>
-          <article class="room">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800" alt="Superior">
-            <div class="meta">
-              <h4>Superior</h4>
-              <p>Cama queen • Balcón privado</p>
-              <p class="price">$110 / noche</p>
-            </div>
-          </article>
-          <article class="room">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" alt="Familiar">
-            <div class="meta">
-              <h4>Suite Familiar</h4>
-              <p>2 dormitorios • Cocina pequeña</p>
-              <p class="price">$180 / noche</p>
-            </div>
-          </article>
-        </div>
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="services-grid">
+        <div class="amenity">Piscina</div>
+        <div class="amenity">Restaurante</div>
+        <div class="amenity">WiFi Gratis</div>
+        <div class="amenity">Parqueadero</div>
+        <div class="amenity">Recepción 24/7</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="amenities">
-      <div class="container">
-        <h3 class="section-title">Comodidades</h3>
-        <div class="amenities">
-          <div class="amenity">
-            <h5>Piscina</h5>
-          </div>
-          <div class="amenity">
-            <h5>Restaurante</h5>
-          </div>
-          <div class="amenity">
-            <h5>Tours ecológicos</h5>
-          </div>
-          <div class="amenity">
-            <h5>Wifi gratis</h5>
-          </div>
-        </div>
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-container">
+      <div class="galeria-slide">
+        <!-- Imágenes (repite varias para lograr el loop infinito) -->
+        <img src="imagenes/galeria/img1.jpg" alt="Foto 1">
+        <img src="imagenes/galeria/img2.jpg" alt="Foto 2">
+        <img src="imagenes/galeria/img3.jpg" alt="Foto 3">
+        <img src="imagenes/galeria/img4.jpg" alt="Foto 4">
+        <img src="imagenes/galeria/img5.jpg" alt="Foto 5">
+        <img src="imagenes/galeria/img6.jpg" alt="Foto 6">
+        <img src="imagenes/galeria/img7.jpg" alt="Foto 1">
+        <img src="imagenes/galeria/img8.jpg" alt="Foto 2">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="gallery">
-      <div class="container">
-        <h3 class="section-title">Galería</h3>
-        <div class="carousel">
-          <div class="carousel-inner">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800" alt="playa">
-            <img src="https://images.unsplash.com/photo-1501117716987-c8e6d4ec8b8f?q=80&w=800" alt="selva">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800" alt="habitación">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" alt="terraza">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800" alt="playa">
-            <img src="https://images.unsplash.com/photo-1501117716987-c8e6d4ec8b8f?q=80&w=800" alt="selva">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800" alt="habitación">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" alt="terraza">
-          </div>
-        </div>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <h2>Nuestros Huéspedes</h2>
+    <div class="testimonials">
+      <div class="quote">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Huésped feliz" class="guest-photo">
+        <p>"La experiencia en Hotel Caporo fue mágica. El servicio es de primera y el lugar simplemente espectacular."
+        </p>
+        <h4>- Ana Rodríguez</h4>
       </div>
-    </section>
 
-    <section id="testimonials">
-      <div class="container">
-        <h3 class="section-title">Opiniones</h3>
-        <div class="testimonials">
-          <div class="quote">
-            <p>“La mejor experiencia en el Caribe colombiano, naturaleza y confort en un mismo lugar.”</p>
-            <p class="muted">— Laura G.</p>
-          </div>
-          <div class="quote">
-            <p>“Capurganá es mágico y el Hotel Caporo lo hace aún más especial.”</p>
-            <p class="muted">— Andrés R.</p>
-          </div>
-        </div>
+      <div class="quote">
+        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Huésped feliz" class="guest-photo">
+        <p>"Un lugar paradisíaco. Despertar con el sonido del mar y la calidez de la gente no tiene precio."</p>
+        <h4>- Carlos Méndez</h4>
       </div>
-    </section>
 
-    <section id="contact">
-      <div class="container">
-        <h3 class="section-title">Contáctanos</h3>
-        <div class="contact-grid">
-          <div>
-            <div class="contact-card">
-              <form>
-                <label>Nombre</label>
-                <input type="text" placeholder="Tu nombre" required>
-                <label>Correo</label>
-                <input type="email" placeholder="tu@correo.com" required>
-                <label>Mensaje</label>
-                <textarea rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                <button class="btn" type="submit">Enviar</button>
-              </form>
-            </div>
-            <div style="margin-top:14px;background:#fff;padding:12px;border-radius:8px">
-              <p class="muted">Dirección: Playa principal, Capurganá, Colombia</p>
-              <p class="muted">Teléfono: +57 310 000 0000</p>
-              <p class="muted">Email: reservas@hotelcaporo.com</p>
-            </div>
-          </div>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.486228423158!2d-77.35900430822678!3d8.633333333333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e649a4b4b4b4b4b%3A0x4b4b4b4b4b4b4b4b!2sCapurgan%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1727529600000" width="100%" height="300" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+      <div class="quote">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Huésped feliz" class="guest-photo">
+        <p>"Definitivamente volveré. Las habitaciones son muy cómodas y la comida deliciosa."</p>
+        <h4>- Laura Gómez</h4>
       </div>
-    </section>
-  </main>
 
+      <div class="quote">
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Huésped feliz" class="guest-photo">
+        <p> "Un lugar paradisíaco, me enamoré de Capurganá. La atención fue excelente y definitivamente volveré con mi
+          familia."</p>
+        <h4>- Valentina Gomez</h4>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+     CONTACTO
+     ========================= -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contact-container">
+
+      <!-- Formulario con mailto -->
+      <form class="contact-form" action="mailto:tu-correo@ejemplo.com" method="POST" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="Correo" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="Mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <!-- Mapa -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13267.982883830035!2d-77.35638969765368!3d8.634829929166285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5122998f674f09%3A0x47c236bb2cdeb1da!2zQ2FwdXJnYW5hLCBBY2FuZMOtLCBDaG9jw7M!5e0!3m2!1ses-419!2sco!4v1759195801537!5m2!1ses-419!2sco"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-      <div><strong>Hotel Caporo</strong>
-        <div class="muted">© <span id="year"></span> Todos los derechos reservados</div>
-      </div>
-      <div style="display:flex;gap:14px"><a href="#">Política de privacidad</a><a href="#">Términos</a></div>
+    <div class="container">
+      <p>&copy; 2025 Hotel Caporo - Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 
 </html>
