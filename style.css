@@ -591,6 +591,44 @@ h2 {
   height: 350px;
 }
 
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+.social-btn.instagram {
+  background: #C13584;
+}
+
+.social-btn.facebook {
+  background: #3b5998;
+}
+
+.social-btn.whatsapp {
+  background: #25D366;
+}
+
+
 /* =========================
    FOOTER
    ========================= */
